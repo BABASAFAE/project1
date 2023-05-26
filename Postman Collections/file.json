@@ -1,0 +1,22 @@
+{
+	"info": {
+		"_postman_id": "78b0b05f-8d4c-43eb-9934-fe3fb5cca59d",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"_postman_id": "178a0c22-4da8-4b78-9d51-e8575220bb66",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://reqres.in/api/users/2"
+			},
+			"response": []
+		}
+	]
+}
