@@ -7,14 +7,29 @@
 	"item": [
 		{
 			"name": "New Request",
-			"_postman_id": "178a0c22-4da8-4b78-9d51-e8575220bb66",
+			"id": "178a0c22-4da8-4b78-9d51-e8575220bb66",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "Bearer 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"
+					}
+				},
+				"method": "POST",
 				"header": [],
-				"url": "https://reqres.in/api/users/2"
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"name\": \"unique-repo\",\r\n    \"description\": \"This is a unique repository\",\r\n    \"private\": false\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.github.com/user/repos"
 			},
 			"response": []
 		}
